@@ -18,7 +18,6 @@
 
 import AVKit
 import UIKit
-import PSPDFKit
 import CanvasKit
 import Fabric
 import Crashlytics
@@ -53,7 +52,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate, AppEnvironmentDelegate {
             FirebaseApp.configure()
             configureRemoteConfig()
         }
-        DocViewerViewController.setup(.studentPSPDFKitLicense)
         prepareReactNative()
         setupDefaultErrorHandling()
         setupPageViewLogging()

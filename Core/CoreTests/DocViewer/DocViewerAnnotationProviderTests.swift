@@ -17,7 +17,6 @@
 //
 
 import XCTest
-import PSPDFKit
 import TestsFoundation
 @testable import Core
 

@@ -18,8 +18,6 @@
 
 import AVKit
 import XCTest
-import PSPDFKit
-import PSPDFKitUI
 import QuickLook
 @testable import Core
 import TestsFoundation
@@ -181,31 +179,6 @@ class FileDetailsViewControllerTests: CoreTestCase {
         XCTAssertEqual(preview.dataSource?.previewController(preview, previewItemAt: 0) as? URL, controller.localURL)
     }
 
-    func testPDF() {
-        DocViewerViewController.hasPSPDFKitLicense = true
-        mock(APIFile.make(filename: "File.pdf", contentType: "application/pdf", mime_class: "pdf"))
-        controller.view.layoutIfNeeded()
-        XCTAssertTrue(controller.spinnerView.isHidden)
-        XCTAssertTrue(controller.progressView.isHidden)
-        let pdf = controller.children.first as! PSPDFViewController
-        XCTAssertTrue(controller.pdfViewController(pdf, shouldShow: UIActivityViewController(activityItems: [""], applicationActivities: nil), animated: false))
-        XCTAssertFalse(controller.pdfViewController(pdf, shouldShow: PSPDFStampViewController(), animated: false))
-
-        let items = [
-            PSPDFMenuItem(title: "", block: {}, identifier: PSPDFTextMenu.annotationMenuNote.rawValue),
-            PSPDFMenuItem(title: "", block: {}, identifier: PSPDFTextMenu.annotationMenuInspector.rawValue),
-            PSPDFMenuItem(title: "", block: {}, identifier: PSPDFTextMenu.annotationMenuRemove.rawValue),
-        ]
-        let results = controller.pdfViewController(pdf, shouldShow: items, atSuggestedTargetRect: .zero, for: [], in: .zero, on: PSPDFPageView(frame: .zero))
-        XCTAssertEqual(results.count, 2)
-        XCTAssertEqual(results[0].title, "Style")
-        XCTAssertNotNil(results[1].ps_image)
-        let document = MockDocument()
-        pdf.document = document
-        controller.viewWillDisappear(false)
-        XCTAssertTrue(document.saveWasCalled)
-    }
-
     func xtestSVG() {
         mock(APIFile.make(filename: "File.svg", contentType: "image/svg+xml", mime_class: "file"))
         let done = expectation(description: "done")
@@ -254,12 +227,5 @@ class FileDetailsViewControllerTests: CoreTestCase {
         XCTAssertTrue(controller.spinnerView.isHidden)
         XCTAssertTrue(controller.progressView.isHidden)
         XCTAssertEqual(controller.contentView.subviews[0].subviews[0].accessibilityLabel, file.display_name)
-    }
-}
-
-class MockDocument: PSPDFDocument {
-    var saveWasCalled = false
-    override func save(options: [PSPDFDocumentSaveOption: Any]? = nil) throws {
-        saveWasCalled = true
     }
 }

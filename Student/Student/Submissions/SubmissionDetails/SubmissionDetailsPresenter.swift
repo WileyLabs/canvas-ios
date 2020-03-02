@@ -177,17 +177,12 @@ class SubmissionDetailsPresenter: PageViewLoggerPresenterProtocol {
             return controller
         case .some(.online_upload):
             if let attachment = submission.attachments?.first(where: { $0.id == selectedFileID }),
-                let filename = attachment.filename,
                 let url = attachment.url {
                 switch attachment.mimeClass {
                 case "doc", "image", "pdf":
-                    return DocViewerViewController.create(
-                        filename: filename,
-                        previewURL: attachment.previewURL,
-                        fallbackURL: url,
-                        navigationItem: view?.navigationItem,
-                        env: env
-                    )
+                    let controller = CoreWebViewController()
+                    controller.webView.accessibilityIdentifier = "SubmissionDetails.webView"
+                    controller.webView.load(URLRequest(url: url))
                 case "audio", "video":
                     let player = AVPlayer(url: url)
                     let controller = AVPlayerViewController()

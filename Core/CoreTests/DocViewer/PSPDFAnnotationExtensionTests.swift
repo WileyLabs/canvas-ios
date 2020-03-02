@@ -17,7 +17,6 @@
 //
 
 import XCTest
-import PSPDFKit
 @testable import Core
 
 class PSPDFAnnotationExtensionTests: XCTestCase {

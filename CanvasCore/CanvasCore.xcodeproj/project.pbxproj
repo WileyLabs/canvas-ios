@@ -25,10 +25,6 @@
 		2CD6B5701FD20A9800C7DE15 /* WindowTraitsManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 2CD6B56E1FD20A9800C7DE15 /* WindowTraitsManager.h */; };
 		2CD6B5711FD20A9800C7DE15 /* WindowTraitsManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CD6B56F1FD20A9800C7DE15 /* WindowTraitsManager.m */; };
 		2CD7769C200977EC00589D4F /* UIApplicationDelegate+Core.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CD7769B200977EC00589D4F /* UIApplicationDelegate+Core.swift */; };
-		2CE40C9A1F87D36900ECEACB /* CanvadocViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 494AE0B21F843B59001A8F31 /* CanvadocViewManager.m */; };
-		2CE40C9B1F87D36E00ECEACB /* CanvadocView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494AE0B01F843B58001A8F31 /* CanvadocView.swift */; };
-		2CE40C9C1F87D37100ECEACB /* PSPDFView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494AE0B11F843B58001A8F31 /* PSPDFView.swift */; };
-		2CE40C9D1F87D37300ECEACB /* PSPDFViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 494AE0B31F843B59001A8F31 /* PSPDFViewManager.m */; };
 		2CF6DEB62006A039007A5591 /* UIViewController+Core.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF6DEB52006A039007A5591 /* UIViewController+Core.swift */; };
 		2CFAFBD11FD21B3800F22C7F /* WindowTraits.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CFAFBD01FD21B3800F22C7F /* WindowTraits.swift */; };
 		3B10AC0B206D8838007EFC2F /* Array+Core.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B10AC0A206D8838007EFC2F /* Array+Core.swift */; };
@@ -62,21 +58,6 @@
 		49301FF11F901854006BD777 /* CommunicationChannel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49301FE51F901853006BD777 /* CommunicationChannel.swift */; };
 		49301FF21F901854006BD777 /* PushState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49301FE61F901853006BD777 /* PushState.swift */; };
 		49301FF31F901854006BD777 /* NotificationPreference.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49301FE71F901853006BD777 /* NotificationPreference.swift */; };
-		4930200D1F901CF5006BD777 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49301FF91F901CF5006BD777 /* Assets.xcassets */; };
-		4930200E1F901CF5006BD777 /* CommentReplyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49301FFC1F901CF5006BD777 /* CommentReplyView.swift */; };
-		4930200F1F901CF5006BD777 /* UITextView+Placeholder.m in Sources */ = {isa = PBXBuildFile; fileRef = 49301FFD1F901CF5006BD777 /* UITextView+Placeholder.m */; };
-		493020101F901CF5006BD777 /* CanvadocsCommentAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49301FFE1F901CF5006BD777 /* CanvadocsCommentAnnotation.swift */; };
-		493020111F901CF5006BD777 /* CommentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49301FFF1F901CF5006BD777 /* CommentTableViewCell.swift */; };
-		493020121F901CF5006BD777 /* CanvasCommentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 493020001F901CF5006BD777 /* CanvasCommentsViewController.swift */; };
-		493020131F901CF5006BD777 /* CommentTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 493020011F901CF5006BD777 /* CommentTableViewCell.xib */; };
-		493020141F901CF5006BD777 /* CommentReplyView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 493020021F901CF5006BD777 /* CommentReplyView.xib */; };
-		493020151F901CF5006BD777 /* UITextView+Placeholder.h in Headers */ = {isa = PBXBuildFile; fileRef = 493020031F901CF5006BD777 /* UITextView+Placeholder.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		493020161F901CF5006BD777 /* CanvadocsAnnotationProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 493020041F901CF5006BD777 /* CanvadocsAnnotationProvider.swift */; };
-		493020171F901CF5006BD777 /* CanvadocsAnnotationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 493020051F901CF5006BD777 /* CanvadocsAnnotationService.swift */; };
-		493020181F901CF5006BD777 /* CanvadocsAnnotationToolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 493020061F901CF5006BD777 /* CanvadocsAnnotationToolbar.swift */; };
-		4930201A1F901CF5006BD777 /* CanvadocsConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 493020081F901CF5006BD777 /* CanvadocsConstants.swift */; };
-		4930201B1F901CF5006BD777 /* CanvadocsPDFDocumentPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 493020091F901CF5006BD777 /* CanvadocsPDFDocumentPresenter.swift */; };
-		4930201C1F901CF5006BD777 /* CanvadocsAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4930200A1F901CF5006BD777 /* CanvadocsAnnotation.swift */; };
 		493020441F902364006BD777 /* UIDevice+Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 493020271F902360006BD777 /* UIDevice+Model.swift */; };
 		493020451F902364006BD777 /* AppStoreReview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 493020281F902360006BD777 /* AppStoreReview.swift */; };
 		493020461F902364006BD777 /* NSError+Categorization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 493020291F902360006BD777 /* NSError+Categorization.swift */; };
@@ -129,7 +110,6 @@
 		494AE0A61F843A8A001A8F31 /* A11yGroupManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 494AE0A51F843A8A001A8F31 /* A11yGroupManager.m */; };
 		494AE0AD1F843AAC001A8F31 /* VideoContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494AE0AB1F843AAB001A8F31 /* VideoContainerView.swift */; };
 		494AE0AE1F843AAC001A8F31 /* VideoContainerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 494AE0AC1F843AAC001A8F31 /* VideoContainerManager.m */; };
-		494BC6061F953D0D00C77257 /* PreSubmissionPDFDocumentPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494BC6021F953D0C00C77257 /* PreSubmissionPDFDocumentPresenter.swift */; };
 		4961F51A1F8FAC440093EC86 /* Icon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4961F5161F8FAC3C0093EC86 /* Icon.swift */; };
 		4961F51B1F8FAC440093EC86 /* Icons.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4961F5181F8FAC3D0093EC86 /* Icons.xcassets */; };
 		4961F51C1F8FAC440093EC86 /* UIImage+SoIconic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4961F5171F8FAC3D0093EC86 /* UIImage+SoIconic.swift */; };
@@ -419,7 +399,6 @@
 		7D6410EC2280B74E008FA345 /* NativeLoginManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D6410EB2280B74E008FA345 /* NativeLoginManager.swift */; };
 		7D6C8C7522F2335A00E5ADD8 /* HTTPRequestHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D6C8C7422F2335A00E5ADD8 /* HTTPRequestHandler.m */; };
 		7DD89E8B20AB626600650227 /* AppStoreReview.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DD89E8A20AB626600650227 /* AppStoreReview.m */; };
-		7DF5A776208AAB8000419AB9 /* CanvadocsAnnotationStateManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DF5A775208AAB8000419AB9 /* CanvadocsAnnotationStateManager.swift */; };
 		9F068D64207C082B0040EFFA /* registerSharedNativeViewControllers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F068D63207C082B0040EFFA /* registerSharedNativeViewControllers.swift */; };
 		9F544E051FBB766E00BB2D84 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9F544E071FBB766E00BB2D84 /* InfoPlist.strings */; };
 		9F544E0A1FBB766E00BB2D84 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9F544E0C1FBB766E00BB2D84 /* Localizable.strings */; };
@@ -451,8 +430,6 @@
 		B1F4E8CC206179CC0056074A /* NativeFileSystem.m in Sources */ = {isa = PBXBuildFile; fileRef = B1F4E8CB206179CC0056074A /* NativeFileSystem.m */; };
 		B1F4E8CF206189010056074A /* video-preview.png in Resources */ = {isa = PBXBuildFile; fileRef = B1F4E8CE206189010056074A /* video-preview.png */; };
 		B1F4E8D12061950C0056074A /* zss-rich-text-editor.html in Resources */ = {isa = PBXBuildFile; fileRef = B1F4E8D02061950C0056074A /* zss-rich-text-editor.html */; };
-		F9B946EC221491F00083E660 /* PSPDFKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9B946EA221491F00083E660 /* PSPDFKit.framework */; };
-		F9B946ED221491F00083E660 /* PSPDFKitUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9B946EB221491F00083E660 /* PSPDFKitUI.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -532,21 +509,6 @@
 		49301FE51F901853006BD777 /* CommunicationChannel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommunicationChannel.swift; sourceTree = "<group>"; };
 		49301FE61F901853006BD777 /* PushState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PushState.swift; sourceTree = "<group>"; };
 		49301FE71F901853006BD777 /* NotificationPreference.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationPreference.swift; sourceTree = "<group>"; };
-		49301FF91F901CF5006BD777 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		49301FFC1F901CF5006BD777 /* CommentReplyView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentReplyView.swift; sourceTree = "<group>"; };
-		49301FFD1F901CF5006BD777 /* UITextView+Placeholder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextView+Placeholder.m"; sourceTree = "<group>"; };
-		49301FFE1F901CF5006BD777 /* CanvadocsCommentAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CanvadocsCommentAnnotation.swift; sourceTree = "<group>"; };
-		49301FFF1F901CF5006BD777 /* CommentTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentTableViewCell.swift; sourceTree = "<group>"; };
-		493020001F901CF5006BD777 /* CanvasCommentsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CanvasCommentsViewController.swift; sourceTree = "<group>"; };
-		493020011F901CF5006BD777 /* CommentTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CommentTableViewCell.xib; sourceTree = "<group>"; };
-		493020021F901CF5006BD777 /* CommentReplyView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CommentReplyView.xib; sourceTree = "<group>"; };
-		493020031F901CF5006BD777 /* UITextView+Placeholder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextView+Placeholder.h"; sourceTree = "<group>"; };
-		493020041F901CF5006BD777 /* CanvadocsAnnotationProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CanvadocsAnnotationProvider.swift; sourceTree = "<group>"; };
-		493020051F901CF5006BD777 /* CanvadocsAnnotationService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CanvadocsAnnotationService.swift; sourceTree = "<group>"; };
-		493020061F901CF5006BD777 /* CanvadocsAnnotationToolbar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CanvadocsAnnotationToolbar.swift; sourceTree = "<group>"; };
-		493020081F901CF5006BD777 /* CanvadocsConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CanvadocsConstants.swift; sourceTree = "<group>"; };
-		493020091F901CF5006BD777 /* CanvadocsPDFDocumentPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CanvadocsPDFDocumentPresenter.swift; sourceTree = "<group>"; };
-		4930200A1F901CF5006BD777 /* CanvadocsAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CanvadocsAnnotation.swift; sourceTree = "<group>"; };
 		493020271F902360006BD777 /* UIDevice+Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIDevice+Model.swift"; sourceTree = "<group>"; };
 		493020281F902360006BD777 /* AppStoreReview.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppStoreReview.swift; sourceTree = "<group>"; };
 		493020291F902360006BD777 /* NSError+Categorization.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSError+Categorization.swift"; sourceTree = "<group>"; };
@@ -599,11 +561,6 @@
 		494AE0A51F843A8A001A8F31 /* A11yGroupManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = A11yGroupManager.m; sourceTree = "<group>"; };
 		494AE0AB1F843AAB001A8F31 /* VideoContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoContainerView.swift; sourceTree = "<group>"; };
 		494AE0AC1F843AAC001A8F31 /* VideoContainerManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VideoContainerManager.m; sourceTree = "<group>"; };
-		494AE0B01F843B58001A8F31 /* CanvadocView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanvadocView.swift; sourceTree = "<group>"; };
-		494AE0B11F843B58001A8F31 /* PSPDFView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PSPDFView.swift; sourceTree = "<group>"; };
-		494AE0B21F843B59001A8F31 /* CanvadocViewManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CanvadocViewManager.m; sourceTree = "<group>"; };
-		494AE0B31F843B59001A8F31 /* PSPDFViewManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PSPDFViewManager.m; sourceTree = "<group>"; };
-		494BC6021F953D0C00C77257 /* PreSubmissionPDFDocumentPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreSubmissionPDFDocumentPresenter.swift; sourceTree = "<group>"; };
 		4961F5161F8FAC3C0093EC86 /* Icon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Icon.swift; sourceTree = "<group>"; };
 		4961F5171F8FAC3D0093EC86 /* UIImage+SoIconic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+SoIconic.swift"; sourceTree = "<group>"; };
 		4961F5181F8FAC3D0093EC86 /* Icons.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Icons.xcassets; sourceTree = "<group>"; };
@@ -947,7 +904,6 @@
 		7DC4D6AB2146E2D3007B1C06 /* en-GB-instukhe */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "en-GB-instukhe"; path = "en-GB-instukhe.lproj/SubmissionConfirmationViewController.strings"; sourceTree = "<group>"; };
 		7DC4D6AD2146E2D6007B1C06 /* da-instk12 */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "da-instk12"; path = "da-instk12.lproj/SubmissionConfirmationViewController.strings"; sourceTree = "<group>"; };
 		7DD89E8A20AB626600650227 /* AppStoreReview.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppStoreReview.m; sourceTree = "<group>"; };
-		7DF5A775208AAB8000419AB9 /* CanvadocsAnnotationStateManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanvadocsAnnotationStateManager.swift; sourceTree = "<group>"; };
 		801BC15BB71585F55A4CD6C8 /* Pods_defaults_CanvasCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_defaults_CanvasCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F068D63207C082B0040EFFA /* registerSharedNativeViewControllers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = registerSharedNativeViewControllers.swift; sourceTree = "<group>"; };
 		9F0A6C871FBB768A009CA750 /* mi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = mi; path = mi.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -1055,8 +1011,6 @@
 				B1F405F822E23D28008FAFE6 /* ReactiveObjCBridge.framework in Frameworks */,
 				B1F405F922E23D28008FAFE6 /* ReactiveSwift.framework in Frameworks */,
 				B1F405FB22E23D28008FAFE6 /* ReactiveObjC.framework in Frameworks */,
-				F9B946EC221491F00083E660 /* PSPDFKit.framework in Frameworks */,
-				F9B946ED221491F00083E660 /* PSPDFKitUI.framework in Frameworks */,
 				49383CE61F848652009C8F8E /* CanvasKit.framework in Frameworks */,
 				630085E9F4EBC97E435FFE64 /* Pods_defaults_CanvasCore.framework in Frameworks */,
 				7D0215A321BAE703009A8E69 /* Core.framework in Frameworks */,
@@ -1109,7 +1063,6 @@
 				B1F4E8CD206188DC0056074A /* RCE */,
 				3BBEAA47204726E4004D334C /* Page View Analytics */,
 				49301FB51F901235006BD777 /* Activity Stream */,
-				49301FF41F901CA0006BD777 /* Annotations */,
 				49301FC31F901480006BD777 /* Calendar */,
 				2CAF1B171F72AEDB007225DF /* CanvasCore.h */,
 				49383CF21F8498DA009C8F8E /* CanvasCore.xcassets */,
@@ -1127,7 +1080,6 @@
 				4961F5441F8FAEE70093EC86 /* Media */,
 				49CE96C11F8FFC0B00121A43 /* Modules */,
 				49CE96A61F8FF8FE00121A43 /* Pages */,
-				494AE0AF1F843B1F001A8F31 /* PDF */,
 				49CE97791F900CBD00121A43 /* People */,
 				4961F5AA1F8FB37F0093EC86 /* Persistence */,
 				49301FD61F901826006BD777 /* Push Notifications */,
@@ -1276,46 +1228,6 @@
 				49301FE71F901853006BD777 /* NotificationPreference.swift */,
 			);
 			path = Model;
-			sourceTree = "<group>";
-		};
-		49301FF41F901CA0006BD777 /* Annotations */ = {
-			isa = PBXGroup;
-			children = (
-				494BC5FE1F953CBC00C77257 /* Pre Submission */,
-				49301FF91F901CF5006BD777 /* Assets.xcassets */,
-				49301FFA1F901CF5006BD777 /* Canvadocs */,
-			);
-			path = Annotations;
-			sourceTree = "<group>";
-		};
-		49301FFA1F901CF5006BD777 /* Canvadocs */ = {
-			isa = PBXGroup;
-			children = (
-				49301FFB1F901CF5006BD777 /* Comments */,
-				493020041F901CF5006BD777 /* CanvadocsAnnotationProvider.swift */,
-				493020051F901CF5006BD777 /* CanvadocsAnnotationService.swift */,
-				493020061F901CF5006BD777 /* CanvadocsAnnotationToolbar.swift */,
-				7DF5A775208AAB8000419AB9 /* CanvadocsAnnotationStateManager.swift */,
-				493020081F901CF5006BD777 /* CanvadocsConstants.swift */,
-				493020091F901CF5006BD777 /* CanvadocsPDFDocumentPresenter.swift */,
-				4930200A1F901CF5006BD777 /* CanvadocsAnnotation.swift */,
-			);
-			path = Canvadocs;
-			sourceTree = "<group>";
-		};
-		49301FFB1F901CF5006BD777 /* Comments */ = {
-			isa = PBXGroup;
-			children = (
-				49301FFE1F901CF5006BD777 /* CanvadocsCommentAnnotation.swift */,
-				493020001F901CF5006BD777 /* CanvasCommentsViewController.swift */,
-				49301FFC1F901CF5006BD777 /* CommentReplyView.swift */,
-				493020021F901CF5006BD777 /* CommentReplyView.xib */,
-				49301FFF1F901CF5006BD777 /* CommentTableViewCell.swift */,
-				493020011F901CF5006BD777 /* CommentTableViewCell.xib */,
-				493020031F901CF5006BD777 /* UITextView+Placeholder.h */,
-				49301FFD1F901CF5006BD777 /* UITextView+Placeholder.m */,
-			);
-			path = Comments;
 			sourceTree = "<group>";
 		};
 		493020261F9022FB006BD777 /* Utilities */ = {
@@ -1476,25 +1388,6 @@
 				58595B2045EC1806A88292D9 /* NativeUtils.m */,
 			);
 			path = "React Native Modules";
-			sourceTree = "<group>";
-		};
-		494AE0AF1F843B1F001A8F31 /* PDF */ = {
-			isa = PBXGroup;
-			children = (
-				494AE0B01F843B58001A8F31 /* CanvadocView.swift */,
-				494AE0B21F843B59001A8F31 /* CanvadocViewManager.m */,
-				494AE0B11F843B58001A8F31 /* PSPDFView.swift */,
-				494AE0B31F843B59001A8F31 /* PSPDFViewManager.m */,
-			);
-			path = PDF;
-			sourceTree = "<group>";
-		};
-		494BC5FE1F953CBC00C77257 /* Pre Submission */ = {
-			isa = PBXGroup;
-			children = (
-				494BC6021F953D0C00C77257 /* PreSubmissionPDFDocumentPresenter.swift */,
-			);
-			path = "Pre Submission";
 			sourceTree = "<group>";
 		};
 		4961F5141F8FABDC0093EC86 /* Icons */ = {
@@ -2488,7 +2381,6 @@
 				494AE09D1F843A09001A8F31 /* NativeAccessibility.h in Headers */,
 				494AE0A11F843A09001A8F31 /* ScrollViewDisablerManager.h in Headers */,
 				3BC3E0212315BC8A00E15C6D /* CanvasAnalytics.h in Headers */,
-				493020151F901CF5006BD777 /* UITextView+Placeholder.h in Headers */,
 				78C610CE21CA022C00913B93 /* CanvasCrashlytics.h in Headers */,
 				2CD3B49C206AB38E006339D8 /* APIBridge.h in Headers */,
 				494AE08B1F8436E6001A8F31 /* NativeLoginManager.h in Headers */,
@@ -2598,14 +2490,11 @@
 				4961F5551F8FAF280093EC86 /* AudioRecorderViewController.storyboard in Resources */,
 				49CE97A01F900D0000121A43 /* PandatarBuilderViewController.xib in Resources */,
 				49CE967C1F8FF41B00121A43 /* NextOrSubmitView.xib in Resources */,
-				4930200D1F901CF5006BD777 /* Assets.xcassets in Resources */,
-				493020141F901CF5006BD777 /* CommentReplyView.xib in Resources */,
 				49CE966D1F8FF41B00121A43 /* QuestionDrawerCell.xib in Resources */,
 				4961F5571F8FAF280093EC86 /* MediaKitImages.xcassets in Resources */,
 				49CE96841F8FF41B00121A43 /* QuestionHeaderView.xib in Resources */,
 				B1D59802202A607200855C95 /* CanvasWebView.js in Resources */,
 				49CE965D1F8FF41B00121A43 /* TimedQuizViewController.xib in Resources */,
-				493020131F901CF5006BD777 /* CommentTableViewCell.xib in Resources */,
 				B1F4E8CF206189010056074A /* video-preview.png in Resources */,
 				4961F51B1F8FAC440093EC86 /* Icons.xcassets in Resources */,
 				4961F59C1F8FB2920093EC86 /* PrettyImages.xcassets in Resources */,
@@ -2683,7 +2572,6 @@
 				3BC7CEC620113F5B001DFF8C /* CKIClient+Extensions.swift in Sources */,
 				49CE96E21F8FFC4400121A43 /* MasteryPathsItem+Details.swift in Sources */,
 				2CCBD44720C0943B0082E616 /* URL+Core.swift in Sources */,
-				4930200E1F901CF5006BD777 /* CommentReplyView.swift in Sources */,
 				2CAF1B3A1F72B1B7007225DF /* Bundle+Core.swift in Sources */,
 				4961F5A31F8FB2A10093EC86 /* ToastNotification.swift in Sources */,
 				49301FEB1F901854006BD777 /* SimpleAlertExtension.swift in Sources */,
@@ -2692,7 +2580,6 @@
 				4961F5E61F8FB3FC0093EC86 /* Refresher.swift in Sources */,
 				9FCA1A11205AC2FC00ECB5E9 /* AlertControls.m in Sources */,
 				49CE96911F8FF41B00121A43 /* ResponsePage.swift in Sources */,
-				7DF5A776208AAB8000419AB9 /* CanvadocsAnnotationStateManager.swift in Sources */,
 				49CE96581F8FF41B00121A43 /* UIButton+QuizKit.swift in Sources */,
 				49CE96DD1F8FFC4400121A43 /* ModuleItem+Collections.swift in Sources */,
 				49CE966F1F8FF41B00121A43 /* SubmissionConfirmationViewController.swift in Sources */,
@@ -2711,7 +2598,6 @@
 				4961F6831F8FB9620093EC86 /* FileNode+Collections.swift in Sources */,
 				9F068D64207C082B0040EFFA /* registerSharedNativeViewControllers.swift in Sources */,
 				494AE0A01F843A09001A8F31 /* PushNotifications.m in Sources */,
-				4930201A1F901CF5006BD777 /* CanvadocsConstants.swift in Sources */,
 				4930206F1F902462006BD777 /* ParameterEncoding.swift in Sources */,
 				49CE96801F8FF41B00121A43 /* EssayAnswerCell.swift in Sources */,
 				4961F5D21F8FB3E80093EC86 /* FetchedCollectionViewController.swift in Sources */,
@@ -2731,7 +2617,6 @@
 				4961F6261F8FB7010093EC86 /* Enrollment+Colors.swift in Sources */,
 				49CE96871F8FF41B00121A43 /* QuizSubmissionTimerController.swift in Sources */,
 				4961F58E1F8FB21F0093EC86 /* CAShapeLayer+Circle.swift in Sources */,
-				2CE40C9D1F87D37300ECEACB /* PSPDFViewManager.m in Sources */,
 				493020501F902364006BD777 /* String+SoLazy.swift in Sources */,
 				49CE968A1F8FF41B00121A43 /* QuizSubmissionService.swift in Sources */,
 				2C68DCF32086786E00A1EBFA /* UIPickerView+Quiz.swift in Sources */,
@@ -2801,7 +2686,6 @@
 				4961F6291F8FB7050093EC86 /* Course.swift in Sources */,
 				49CE96711F8FF41B00121A43 /* LoadingQuestionsView.swift in Sources */,
 				2CD3B49D206AB38E006339D8 /* APIBridge.m in Sources */,
-				494BC6061F953D0D00C77257 /* PreSubmissionPDFDocumentPresenter.swift in Sources */,
 				49301FD51F9014C6006BD777 /* Session+CalendarEvent.swift in Sources */,
 				4961F6841F8FB9620093EC86 /* Colors.swift in Sources */,
 				3BD3220E2242E2F60036C764 /* SiriShortcutManager.swift in Sources */,
@@ -2839,11 +2723,9 @@
 				497815311FCE14B800D57BBB /* Tab+Details.swift in Sources */,
 				49CE968F1F8FF41B00121A43 /* JSONDecodable.swift in Sources */,
 				49CE96901F8FF41B00121A43 /* CanvasRequest.swift in Sources */,
-				2CE40C9A1F87D36900ECEACB /* CanvadocViewManager.m in Sources */,
 				2CD7769C200977EC00589D4F /* UIApplicationDelegate+Core.swift in Sources */,
 				3B158C9022E12E2F0039A568 /* PageViewEventLogger.m in Sources */,
 				49CE966B1F8FF41B00121A43 /* QuestionDrawerViewController.swift in Sources */,
-				4930201B1F901CF5006BD777 /* CanvadocsPDFDocumentPresenter.swift in Sources */,
 				49CE96861F8FF41B00121A43 /* SubmissionController.swift in Sources */,
 				49CE96651F8FF41B00121A43 /* CanvasQuizService.swift in Sources */,
 				4961F6331F8FB70D0093EC86 /* GradingPeriod.swift in Sources */,
@@ -2880,7 +2762,6 @@
 				B1BE249720AB13FE00C521C3 /* SafariActivity.swift in Sources */,
 				49CE96961F8FF41B00121A43 /* Answer.swift in Sources */,
 				49CE96BC1F8FF94B00121A43 /* PageAPI.swift in Sources */,
-				493020171F901CF5006BD777 /* CanvadocsAnnotationService.swift in Sources */,
 				4930204B1F902364006BD777 /* Concat.swift in Sources */,
 				2CD20D771FA125EC00F339F7 /* DropViewManager.m in Sources */,
 				49CE965A1F8FF41B00121A43 /* QuizIntroFooterView.swift in Sources */,
@@ -2888,7 +2769,6 @@
 				4961F6311F8FB70A0093EC86 /* Grade+Network.swift in Sources */,
 				493020701F902462006BD777 /* HTTPHeaders.swift in Sources */,
 				7D52D89322FCC73100684932 /* Submission.swift in Sources */,
-				493020181F901CF5006BD777 /* CanvadocsAnnotationToolbar.swift in Sources */,
 				497C0F8A1FACD0D200084032 /* CanvasWebView.swift in Sources */,
 				49CE979B1F900D0000121A43 /* UserAPI.swift in Sources */,
 				4961F6211F8FB6F00093EC86 /* EnrollmentCollectionViewCell.swift in Sources */,
@@ -2916,12 +2796,9 @@
 				49CE96851F8FF41B00121A43 /* QuestionHeaderView.swift in Sources */,
 				493020741F902462006BD777 /* NSURLSession+ThreeLegit.swift in Sources */,
 				493020531F902364006BD777 /* Array+SoLazy.swift in Sources */,
-				493020121F901CF5006BD777 /* CanvasCommentsViewController.swift in Sources */,
 				4961F5A71F8FB2A90093EC86 /* UIImage+URLSource.swift in Sources */,
 				493020721F902462006BD777 /* Session+RejectNilParameters.swift in Sources */,
-				4930200F1F901CF5006BD777 /* UITextView+Placeholder.m in Sources */,
 				B1CA05071FE448F300B7D5AA /* NativeNotificationCenter.m in Sources */,
-				493020101F901CF5006BD777 /* CanvadocsCommentAnnotation.swift in Sources */,
 				49301FE81F901854006BD777 /* NotificationKitController.swift in Sources */,
 				4961F55D1F8FAF310093EC86 /* VolumeLevelMeterView.swift in Sources */,
 				7D2F33A92370DDBC002236DB /* WKWebView+PostProcessing.swift in Sources */,
@@ -2994,13 +2871,10 @@
 				49CE96C01F8FF94B00121A43 /* Page.swift in Sources */,
 				49CE96791F8FF41B00121A43 /* MatchAnswerCell.swift in Sources */,
 				49CE96BB1F8FF94B00121A43 /* PageTemplateRenderer.swift in Sources */,
-				493020111F901CF5006BD777 /* CommentTableViewCell.swift in Sources */,
 				49CE96BE1F8FF94B00121A43 /* Page+Detail.swift in Sources */,
-				4930201C1F901CF5006BD777 /* CanvadocsAnnotation.swift in Sources */,
 				B1A6BC94218CAB51000515E3 /* SessionToken.swift in Sources */,
 				9FD18B6B2052DE6800119927 /* LTITools.m in Sources */,
 				7D52D87722FCC73100684932 /* AssignmentGroupAPI.swift in Sources */,
-				2CE40C9C1F87D37100ECEACB /* PSPDFView.swift in Sources */,
 				2C4EBB3B204DFC820085D00E /* UITabBarController+Core.swift in Sources */,
 				4961F6391F8FB7110093EC86 /* Group.swift in Sources */,
 				49CE97A61F900D0000121A43 /* BackdropFile.swift in Sources */,
@@ -3026,9 +2900,7 @@
 				4961F63B1F8FB7180093EC86 /* GradeAPI.swift in Sources */,
 				4961F62A1F8FB7050093EC86 /* Course+Network.swift in Sources */,
 				49CE96E81F8FFC4400121A43 /* Module+Details.swift in Sources */,
-				2CE40C9B1F87D36E00ECEACB /* CanvadocView.swift in Sources */,
 				49CE96761F8FF41B00121A43 /* HTMLAnswerCell.swift in Sources */,
-				493020161F901CF5006BD777 /* CanvadocsAnnotationProvider.swift in Sources */,
 				4961F6401F8FB71B0093EC86 /* Tab.swift in Sources */,
 				2CF6DEB62006A039007A5591 /* UIViewController+Core.swift in Sources */,
 				493020591F902364006BD777 /* Tuple+SoLazy.swift in Sources */,

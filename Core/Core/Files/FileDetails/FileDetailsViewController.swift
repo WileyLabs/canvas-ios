@@ -17,8 +17,6 @@
 //
 
 import AVKit
-import PSPDFKit
-import PSPDFKitUI
 import QuickLook
 import QuickLookThumbnailing
 import UIKit
@@ -92,7 +90,6 @@ public class FileDetailsViewController: UIViewController, CoreWebViewLinkDelegat
 
     public override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
-        saveAnnotations()
         downloadTask?.cancel()
         if let context = context {
             stopTrackingTimeOnViewController(eventName: "/\(context.pathComponent)/files/\(fileID)")
@@ -228,8 +225,8 @@ extension FileDetailsViewController: URLSessionDownloadDelegate {
             embedImageView(for: localURL)
         case (_, "model/vnd.usdz+zip"):
             embedQLThumbnail()
-        case ("pdf", _):
-            embedPDFView(for: localURL)
+//        case ("pdf", _):
+//            embedPDFView(for: localURL)
         case ("video", _):
             embedVideoView(for: localURL)
         default:
@@ -308,84 +305,3 @@ extension FileDetailsViewController: QLPreviewControllerDataSource, QLPreviewCon
     }
 }
 
-extension FileDetailsViewController: PSPDFViewControllerDelegate {
-    func embedPDFView(for url: URL) {
-        guard DocViewerViewController.hasPSPDFKitLicense else {
-            return embedWebView(for: url)
-        }
-        stylePSPDFKit()
-
-        let document = PSPDFDocument(url: url)
-        document.annotationSaveMode = .embedded
-        let controller = PSPDFViewController(document: document, configuration: PSPDFConfiguration { (builder) -> Void in
-            docViewerConfigurationBuilder(builder)
-            builder.editableAnnotationTypes = [ .link, .highlight, .underline, .strikeOut, .squiggly, .freeText, .ink, .square, .circle, .line, .polygon, .eraser ]
-            builder.propertiesForAnnotations[.square] = [["color"], ["lineWidth"]]
-            builder.propertiesForAnnotations[.circle] = [["color"], ["lineWidth"]]
-            builder.propertiesForAnnotations[.line] = [["color"], ["lineWidth"]]
-            builder.propertiesForAnnotations[.polygon] = [["color"], ["lineWidth"]]
-            builder.sharingConfigurations = [ PSPDFDocumentSharingConfiguration { builder in
-                builder.annotationOptions = .flatten
-                builder.pageSelectionOptions = .all
-            }, ]
-
-            // Override the override
-            builder.overrideClass(PSPDFAnnotationToolbar.self, with: PSPDFAnnotationToolbar.self)
-        })
-        controller.annotationToolbarController?.toolbar.toolbarPosition = .positionLeft
-        if #available(iOS 13, *) {
-            let appearance = UIToolbarAppearance()
-            appearance.configureWithOpaqueBackground()
-            appearance.backgroundColor = navigationController?.navigationBar.barTintColor
-            controller.annotationToolbarController?.toolbar.standardAppearance = appearance
-        }
-        controller.delegate = self
-        embed(controller, in: contentView)
-
-        let share = UIBarButtonItem(barButtonSystemItem: .action, target: controller.activityButtonItem.target, action: controller.activityButtonItem.action)
-        share.accessibilityIdentifier = "FileDetails.shareButton"
-        let annotate = controller.annotationButtonItem
-        annotate.image = .icon(.highlighter, .line)
-        annotate.accessibilityIdentifier = "FileDetails.annotateButton"
-        let search = controller.searchButtonItem
-        search.accessibilityIdentifier = "FileDetails.searchButton"
-        navigationItem.rightBarButtonItems = [ share, annotate, search ]
-        NotificationCenter.default.post(name: .init("FileViewControllerBarButtonItemsDidChange"), object: nil)
-
-        doneLoading()
-    }
-
-    func saveAnnotations() {
-        for child in children {
-            _ = try? (child as? PSPDFViewController)?.document?.save()
-        }
-    }
-
-    public func pdfViewController(
-        _ pdfController: PSPDFViewController,
-        shouldShow menuItems: [PSPDFMenuItem],
-        atSuggestedTargetRect rect: CGRect,
-        for annotations: [PSPDFAnnotation]?,
-        in annotationRect: CGRect,
-        on pageView: PSPDFPageView
-    ) -> [PSPDFMenuItem] {
-        return menuItems.compactMap { item in
-            guard item.identifier != PSPDFTextMenu.annotationMenuNote.rawValue else { return nil }
-            if item.identifier == PSPDFTextMenu.annotationMenuInspector.rawValue {
-                item.title = NSLocalizedString("Style", bundle: .core, comment: "")
-            }
-            if item.identifier == PSPDFTextMenu.annotationMenuRemove.rawValue {
-                return PSPDFMenuItem(title: item.title, image: .icon(.trash), block: item.actionBlock, identifier: item.identifier)
-            }
-            return item
-        }
-    }
-
-    public func pdfViewController(_ pdfController: PSPDFViewController, shouldShow controller: UIViewController, options: [String: Any]? = nil, animated: Bool) -> Bool {
-        if controller is PSPDFStampViewController { return false }
-        if controller is UIActivityViewController {
-            _ = try? pdfController.document?.save()
-        }
-        return true
-    }
-}

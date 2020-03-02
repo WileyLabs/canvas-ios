@@ -21,7 +21,6 @@ import UIKit
 import CanvasKit
 import ReactiveSwift
 import UserNotifications
-import PSPDFKit
 import Fabric
 import Crashlytics
 import Firebase

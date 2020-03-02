@@ -17,8 +17,6 @@
 //
 
 import XCTest
-import PSPDFKit
-import PSPDFKitUI
 @testable import Core
 
 class DocViewerConstantsTests: XCTestCase {
