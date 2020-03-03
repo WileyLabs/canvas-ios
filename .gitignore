@@ -80,3 +80,5 @@ scripts/apiModelCodegen/input.json
 # Secrets
 **/*.xcassets/Secrets/*.dataset
 .bitrise.secrets.yml
+Student/Configuration/schoolConfig.uat.plist 
+

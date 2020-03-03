@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		25D064F2240E713A00B2CB6A /* schoolConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = 25D064F1240E713A00B2CB6A /* schoolConfig.plist */; };
 		2C0CAD751DEF6C33008D90FA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2C0CAD771DEF6C33008D90FA /* InfoPlist.strings */; };
 		2C67B0C61E01F05A00DDD191 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C67B0C51E01F05A00DDD191 /* AssetsLibrary.framework */; };
 		2C67B0C81E01F05F00DDD191 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C67B0C71E01F05F00DDD191 /* CoreTelephony.framework */; };
@@ -396,6 +397,7 @@
 		1617CAD552082AC99A178C4E /* Pods_defaults_common_ui_tests_StudentUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_defaults_common_ui_tests_StudentUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1624D39115A77E2B728908FB /* Pods_defaults_CanvasTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_defaults_CanvasTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C250EDA2321EF6AAC5611D3 /* Pods-CanvasTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CanvasTests.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-CanvasTests/Pods-CanvasTests.debug.xcconfig"; sourceTree = "<group>"; };
+		25D064F1240E713A00B2CB6A /* schoolConfig.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = schoolConfig.plist; sourceTree = "<group>"; };
 		2C0CAD721DEF6C32008D90FA /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		2C0CAD761DEF6C33008D90FA /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		2C0CAD7D1DEF6C48008D90FA /* fr-CA */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "fr-CA"; path = "fr-CA.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
@@ -962,6 +964,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		25D064F0240E713A00B2CB6A /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				25D064F1240E713A00B2CB6A /* schoolConfig.plist */,
+			);
+			path = Configuration;
+			sourceTree = "<group>";
+		};
 		3B6DCCA81FB502CE005EE8D2 /* GradesWidget */ = {
 			isa = PBXGroup;
 			children = (
@@ -1008,6 +1018,7 @@
 		4927046A1CF4AF7100C631C6 = {
 			isa = PBXGroup;
 			children = (
+				25D064F0240E713A00B2CB6A /* Configuration */,
 				2C8E356D20939C2D0071ED94 /* Settings.bundle */,
 				492704751CF4AF7100C631C6 /* Student */,
 				7DCF0F3922F8A096000AACCE /* StudentUnitTests */,
@@ -2413,6 +2424,7 @@
 				7DCF0FC122F8A8D7000AACCE /* SubmissionDetailsLockedEmptyView.xib in Resources */,
 				5EB46DEF1D21A75C00C859A4 /* Images.xcassets in Resources */,
 				495D8BB91CFE17D700D41098 /* LaunchScreen.storyboard in Resources */,
+				25D064F2240E713A00B2CB6A /* schoolConfig.plist in Resources */,
 				7DCF0FA522F8A8A9000AACCE /* QuizListViewController.storyboard in Resources */,
 				B5F122C91D8C4D6C0045063A /* Student.entitlements in Resources */,
 				2C8E356E20939C2D0071ED94 /* Settings.bundle in Resources */,

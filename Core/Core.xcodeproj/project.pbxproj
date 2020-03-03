@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		25D064F8240E780C00B2CB6A /* SchoolConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25D064F7240E780C00B2CB6A /* SchoolConfig.swift */; };
 		2C964838211E2F1A002C3255 /* Core.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C96482E211E2F1A002C3255 /* Core.framework */; };
 		2C96483F211E2F1A002C3255 /* Core.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C964831211E2F1A002C3255 /* Core.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2C96485B211E30B3002C3255 /* RouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C96485A211E30B3002C3255 /* RouterTests.swift */; };
@@ -872,6 +873,7 @@
 
 /* Begin PBXFileReference section */
 		0B6C2C8C1E7935949C8E0B71 /* Pods_defaults_PactTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_defaults_PactTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		25D064F7240E780C00B2CB6A /* SchoolConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SchoolConfig.swift; sourceTree = "<group>"; };
 		2C96482E211E2F1A002C3255 /* Core.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Core.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C964831211E2F1A002C3255 /* Core.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Core.h; sourceTree = "<group>"; };
 		2C964832211E2F1A002C3255 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -1815,6 +1817,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		25D064F6240E780C00B2CB6A /* SchoolConfig */ = {
+			isa = PBXGroup;
+			children = (
+				25D064F7240E780C00B2CB6A /* SchoolConfig.swift */,
+			);
+			path = SchoolConfig;
+			sourceTree = "<group>";
+		};
 		2C964824211E2F1A002C3255 = {
 			isa = PBXGroup;
 			children = (
@@ -1846,6 +1856,7 @@
 		2C964830211E2F1A002C3255 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				25D064F6240E780C00B2CB6A /* SchoolConfig */,
 				9FBFE6D122412B71002B3796 /* ActAsUser */,
 				3BC3E01B2315A0B300E15C6D /* Analytics */,
 				7D8262E9212B1A4F00BD268D /* API */,
@@ -4511,6 +4522,7 @@
 				7DA2602323F722AF005D2121 /* Logger.swift in Sources */,
 				7DA25FDB23F72148005D2121 /* LocalizationManager.swift in Sources */,
 				7DA260F323F72397005D2121 /* FilePicker.swift in Sources */,
+				25D064F8240E780C00B2CB6A /* SchoolConfig.swift in Sources */,
 				7DA2607A23F722FA005D2121 /* PageViewEvent.swift in Sources */,
 				7DA260E323F72359005D2121 /* ListFormatter.swift in Sources */,
 				7DA2603F23F722D9005D2121 /* Course.swift in Sources */,

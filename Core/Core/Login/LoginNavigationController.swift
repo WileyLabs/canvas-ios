@@ -22,7 +22,13 @@ public class LoginNavigationController: UINavigationController {
     weak var loginDelegate: LoginDelegate?
 
     public static func create(loginDelegate: LoginDelegate, fromLaunch: Bool = false) -> LoginNavigationController {
-        let startView = LoginStartViewController.create(loginDelegate: loginDelegate, fromLaunch: fromLaunch)
+        var startView: UIViewController
+        
+        if let config = SchoolConfig.getConfig(), let host = config["host"] {
+            startView = LoginWebViewController.create(host: host as! String, loginDelegate: loginDelegate, method: .normalLogin)
+        } else {
+            startView = LoginStartViewController.create(loginDelegate: loginDelegate, fromLaunch: fromLaunch)
+        }
         let controller = LoginNavigationController(rootViewController: startView)
         controller.loginDelegate = loginDelegate
         return controller
@@ -38,10 +44,17 @@ public class LoginNavigationController: UINavigationController {
     }
 
     public func login(host: String) {
-        viewControllers = [
-            LoginStartViewController.create(loginDelegate: loginDelegate, fromLaunch: false),
-            LoginFindSchoolViewController.create(loginDelegate: loginDelegate, method: .normalLogin),
-            LoginWebViewController.create(host: host, loginDelegate: loginDelegate, method: .normalLogin),
-        ]
+        if let config = SchoolConfig.getConfig(), let specificHost = config["host"] {
+            viewControllers = [
+                LoginWebViewController.create(host: specificHost as! String, loginDelegate: loginDelegate, method: .normalLogin)
+            ]
+        } else {
+            viewControllers = [
+                LoginStartViewController.create(loginDelegate: loginDelegate, fromLaunch: false),
+                LoginFindSchoolViewController.create(loginDelegate: loginDelegate, method: .normalLogin),
+                LoginWebViewController.create(host: host, loginDelegate: loginDelegate, method: .normalLogin),
+            ]
+            return
+        }
     }
 }

@@ -65,22 +65,38 @@ class LoginWebViewController: UIViewController, ErrorViewController {
         super.viewDidLoad()
         webView.accessibilityIdentifier = "LoginWeb.webView"
         webView.backgroundColor = .named(.backgroundLightest)
-        webView.customUserAgent = UserAgent.safari.description
+
+        if let config = SchoolConfig.getConfig(), let specificUserAgent = config["userAgent"] {
+            webView.customUserAgent = specificUserAgent as? String
+        } else {
+            webView.customUserAgent = UserAgent.safari.description
+        }
         webView.navigationDelegate = self
         webView.uiDelegate = self
-
-        // Manual OAuth provided mobileVerifyModel
-        if mobileVerifyModel != nil {
-            return loadLoginWebRequest()
+        
+        if let config = SchoolConfig.getConfig(),
+            let baseUrl = config["baseURL"],
+            let clientID = config["clientID"],
+            let clientSecret = config["clientSecret"] {
+        
+            mobileVerifyModel = APIVerifyClient(authorized: true,
+                                                base_url: NSURL(string:baseUrl as! String) as URL?,
+                                                client_id: clientID as? String,
+                                                client_secret: clientSecret as? String)
+            DispatchQueue.main.async { self.loadLoginWebRequest() }
+        } else {
+            // Manual OAuth provided mobileVerifyModel
+            if mobileVerifyModel != nil {
+                return loadLoginWebRequest()
+            }
+            //Lookup OAuth from mobile verify
+            task?.cancel()
+            task = URLSessionAPI().makeRequest(GetMobileVerifyRequest(domain: host)) { [weak self] (response, _, _) in performUIUpdate {
+                self?.mobileVerifyModel = response
+                self?.task = nil
+                self?.loadLoginWebRequest()
+            } }
         }
-
-        // Lookup OAuth from mobile verify
-        task?.cancel()
-        task = URLSessionAPI().makeRequest(GetMobileVerifyRequest(domain: host)) { [weak self] (response, _, _) in performUIUpdate {
-            self?.mobileVerifyModel = response
-            self?.task = nil
-            self?.loadLoginWebRequest()
-        } }
     }
 
     override func viewWillAppear(_ animated: Bool) {
@@ -114,8 +130,13 @@ extension LoginWebViewController: WKNavigationDelegate {
         }
 
         let queryItems = components.queryItems
-        if // wait for "https://canvas/login?code="
-            url.absoluteString.hasPrefix("https://canvas/login"),
+        
+        var hasPrefix = false
+        if let config = SchoolConfig.getConfig(),
+            let specificPrefix = config["redirectUrl"] {
+            hasPrefix = url.absoluteString.hasPrefix(specificPrefix as! String)
+        }
+        if hasPrefix || url.absoluteString.hasPrefix("https://canvas/login"),
             let code = queryItems?.first(where: { $0.name == "code" })?.value, !code.isEmpty,
             let mobileVerify = mobileVerifyModel, let baseURL = mobileVerify.base_url {
             task?.cancel()
