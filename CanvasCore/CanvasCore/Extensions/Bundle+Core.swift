@@ -20,6 +20,6 @@ import Foundation
 
 extension Bundle {
     @objc static var core: Bundle {
-        return Bundle(identifier: "com.instructure.CanvasCore")!
+        return Bundle(identifier: "com.wiley.instructure.CanvasCore")!
     }
 }
