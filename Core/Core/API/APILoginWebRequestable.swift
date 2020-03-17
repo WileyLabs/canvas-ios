@@ -27,10 +27,15 @@ struct LoginWebRequest: APIRequestable {
     let path = "/login/oauth2/auth"
 
     var query: [APIQueryItem] {
+        var redirectURL = "https://canvas/login"
+        if let config = SchoolConfig.getConfig(),
+            let url = config["redirectUrl"] {
+            redirectURL = url as!String;
+        }
         var items: [APIQueryItem] = [
             .value("client_id", clientID),
             .value("response_type", "code"),
-            .value("redirect_uri", "https://canvas/login"),
+            .value("redirect_uri", redirectURL),
             .value("mobile", "1"),
         ]
 

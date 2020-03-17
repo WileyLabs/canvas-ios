@@ -32,15 +32,15 @@ public class LoadingViewController: UIViewController {
         logoView?.tintColor = .currentLogoColor()
     }
 
-    public override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
-        let animation = CABasicAnimation(keyPath: "transform.rotation.z")
-        animation.fromValue = 0
-        animation.toValue = 2 * Float.pi
-        animation.repeatCount = Float.infinity
-        animation.duration = 10.0
-        logoView?.layer.add(animation, forKey: "spin")
-    }
+//    public override func viewDidAppear(_ animated: Bool) {
+//        super.viewDidAppear(animated)
+//        let animation = CABasicAnimation(keyPath: "transform.rotation.z")
+//        animation.fromValue = 0
+//        animation.toValue = 2 * Float.pi
+//        animation.repeatCount = Float.infinity
+//        animation.duration = 10.0
+//        logoView?.layer.add(animation, forKey: "spin")
+//    }
 
     public override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
