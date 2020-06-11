@@ -105,6 +105,7 @@ class LoginWebViewController: UIViewController, ErrorViewController {
     }
 
     func loadLoginWebRequest() {
+        clearCokies()
         if let verify = mobileVerifyModel, let url = verify.base_url, let clientID = verify.client_id {
             let requestable = LoginWebRequest(authMethod: method, clientID: clientID, provider: authenticationProvider)
             if let request = try? requestable.urlRequest(relativeTo: url, accessToken: nil, actAsUserID: nil) {
@@ -115,6 +116,16 @@ class LoginWebViewController: UIViewController, ErrorViewController {
 }
 
 extension LoginWebViewController: WKNavigationDelegate {
+    func clearCokies() -> Void {
+        let cookieStore = webView.configuration.websiteDataStore.httpCookieStore
+        cookieStore.getAllCookies {
+            cookies in
+            for cookie in cookies {
+                cookieStore.delete(cookie)
+            }
+        }
+    }
+    
     func webView(_ webView: WKWebView, decidePolicyFor navigationAction: WKNavigationAction, decisionHandler: @escaping (WKNavigationActionPolicy) -> Void) {
         guard let url = navigationAction.request.url, let components = URLComponents(url: url, resolvingAgainstBaseURL: false) else {
             return decisionHandler(.allow)
@@ -163,7 +174,10 @@ extension LoginWebViewController: WKNavigationDelegate {
         } else if queryItems?.first(where: { $0.name == "error" }) != nil {
             let error = NSError.instructureError(NSLocalizedString("Authentication failed. Most likely the user denied the request for access.", comment: ""))
             self.showError(error)
+//            self.loadLoginWebRequest();
+            self.perform(Selector(("loadLoginWebRequest")), with: nil, afterDelay: 0.1)
             return decisionHandler(.cancel)
+            
         }
         decisionHandler(.allow)
     }

@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
-    <device id="retina5_5" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -13,7 +11,6 @@
             <connections>
                 <outlet property="activityIndicator" destination="mYV-P9-OFh" id="QuO-HI-PrQ"/>
                 <outlet property="infoLabel" destination="YL5-K8-Z4d" id="uel-xS-DlX"/>
-                <outlet property="resultsButton" destination="oFj-tu-8AG" id="C5V-9c-Aqg"/>
                 <outlet property="statusImageView" destination="d23-nt-Tj8" id="QrW-9E-XJh"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -36,15 +33,6 @@
                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oFj-tu-8AG">
-                    <rect key="frame" x="135" y="416" width="144" height="30"/>
-                    <state key="normal" title="View Results on Web">
-                        <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                    </state>
-                    <connections>
-                        <action selector="resultsTapped:" destination="-1" eventType="touchUpInside" id="Yfc-Yk-QiG"/>
-                    </connections>
-                </button>
                 <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="mYV-P9-OFh">
                     <rect key="frame" x="188.66666666666666" y="291.66666666666669" width="37" height="37"/>
                     <constraints>
@@ -53,18 +41,33 @@
                     </constraints>
                     <color key="color" red="0.97313863039016724" green="0.63104015588760376" blue="0.19637872278690338" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                 </activityIndicatorView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="View Results on Web" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sjR-HD-7wj">
+                    <rect key="frame" x="135" y="387" width="144" height="18"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please tap &quot;Done&quot; button to continue" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aBv-gV-ozu">
+                    <rect key="frame" x="79.666666666666686" y="413" width="255" height="18"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstAttribute="centerX" secondItem="d23-nt-Tj8" secondAttribute="centerX" id="1p9-4V-X9e"/>
-                <constraint firstItem="oFj-tu-8AG" firstAttribute="top" secondItem="YL5-K8-Z4d" secondAttribute="bottom" constant="15" id="JGq-iC-htU"/>
+                <constraint firstItem="aBv-gV-ozu" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="5Ee-7L-T5B"/>
+                <constraint firstItem="sjR-HD-7wj" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="ARl-Q6-h4E"/>
+                <constraint firstItem="sjR-HD-7wj" firstAttribute="top" secondItem="YL5-K8-Z4d" secondAttribute="top" constant="15" id="R7q-Hj-bCE"/>
                 <constraint firstAttribute="centerX" secondItem="YL5-K8-Z4d" secondAttribute="centerX" id="kYl-0B-OcS"/>
                 <constraint firstAttribute="centerX" secondItem="mYV-P9-OFh" secondAttribute="centerX" id="mCQ-xd-Gnk"/>
-                <constraint firstAttribute="centerX" secondItem="oFj-tu-8AG" secondAttribute="centerX" id="mhM-Dc-j5i"/>
+                <constraint firstItem="aBv-gV-ozu" firstAttribute="top" secondItem="sjR-HD-7wj" secondAttribute="bottom" constant="8" id="rY2-R1-f1f"/>
                 <constraint firstItem="YL5-K8-Z4d" firstAttribute="top" secondItem="d23-nt-Tj8" secondAttribute="bottom" constant="30" id="t4T-1o-N3b"/>
                 <constraint firstAttribute="centerY" secondItem="mYV-P9-OFh" secondAttribute="centerY" constant="58" id="ug0-WU-FiJ"/>
                 <constraint firstAttribute="centerY" secondItem="d23-nt-Tj8" secondAttribute="centerY" constant="58" id="wTT-Tp-THw"/>
             </constraints>
+            <point key="canvasLocation" x="139" y="154"/>
         </view>
     </objects>
     <resources>

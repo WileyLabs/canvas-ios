@@ -78,9 +78,9 @@ class LoginStartViewController: UIViewController {
             canvasNetworkButton.isHidden = true
             findSchoolButton.setTitle(NSLocalizedString("Log In", bundle: .core, comment: ""), for: .normal)
         }
-        mdmObservation = MDMManager.shared.observe(\.loginsRaw, changeHandler: { [weak self] _, _ in
-            self?.update()
-        })
+//        mdmObservation = MDMManager.shared.observe(\.loginsRaw, changeHandler: { [weak self] _, _ in
+//            self?.update()
+//        })
 
         update()
         refreshLogins()
