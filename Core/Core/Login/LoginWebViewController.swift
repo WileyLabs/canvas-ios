@@ -87,7 +87,7 @@ class LoginWebViewController: UIViewController, ErrorViewController {
         } else {
             // Manual OAuth provided mobileVerifyModel
             if mobileVerifyModel != nil {
-                return loadLoginWebRequest()
+                return self.loadLoginWebRequest()
             }
             //Lookup OAuth from mobile verify
             task?.cancel()
@@ -104,7 +104,7 @@ class LoginWebViewController: UIViewController, ErrorViewController {
         navigationController?.setNavigationBarHidden(false, animated: true)
     }
 
-    func loadLoginWebRequest() {
+    @objc func loadLoginWebRequest() {
         clearCokies()
         if let verify = mobileVerifyModel, let url = verify.base_url, let clientID = verify.client_id {
             let requestable = LoginWebRequest(authMethod: method, clientID: clientID, provider: authenticationProvider)
@@ -175,7 +175,8 @@ extension LoginWebViewController: WKNavigationDelegate {
             let error = NSError.instructureError(NSLocalizedString("Authentication failed. Most likely the user denied the request for access.", comment: ""))
             self.showError(error)
 //            self.loadLoginWebRequest();
-            self.perform(Selector(("loadLoginWebRequest")), with: nil, afterDelay: 0.1)
+//            self.perform(Selector(("loadLoginWebRequest")), with: nil, afterDelay: 0.1)
+            self.perform(#selector(loadLoginWebRequest), with: nil, afterDelay: 0.1)
             return decisionHandler(.cancel)
             
         }

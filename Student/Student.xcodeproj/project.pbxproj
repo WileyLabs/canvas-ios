@@ -3338,6 +3338,7 @@
 				CODE_SIGN_ENTITLEMENTS = Student/Student.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 2;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = M9TF5PSPE8;
 				ENABLE_BITCODE = NO;
@@ -3369,6 +3370,7 @@
 				CODE_SIGN_ENTITLEMENTS = Student/Student.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 2;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = M9TF5PSPE8;
 				ENABLE_BITCODE = NO;
