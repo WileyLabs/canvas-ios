@@ -12,7 +12,7 @@
 	</array>
 	<key>com.apple.developer.icloud-container-identifiers</key>
 	<array>
-		<string>iCloud.com.wiley.instructure.icanvas</string>
+		<string>iCloud.com.wiley.icanvas.wel</string>
 	</array>
 	<key>com.apple.developer.icloud-services</key>
 	<array>
@@ -22,19 +22,19 @@
 	<true/>
 	<key>com.apple.developer.ubiquity-container-identifiers</key>
 	<array>
-		<string>iCloud.com.wiley.instructure.icanvas</string>
+		<string>iCloud.com.wiley.icanvas.wel</string>
 	</array>
 	<key>com.apple.developer.ubiquity-kvstore-identifier</key>
 	<string>$(TeamIdentifierPrefix)$(CFBundleIdentifier)</string>
 	<key>com.apple.security.application-groups</key>
 	<array>
-		<string>group.com.wiley.instructure.Contexts</string>
-		<string>group.com.wiley.instructure.icanvas</string>
+		<string>group.com.wiley.icanvas.wel.Contexts</string>
+		<string>group.com.wiley.icanvas.wel</string>
 	</array>
 	<key>keychain-access-groups</key>
 	<array>
-		<string>$(AppIdentifierPrefix)com.wiley.instructure.icanvas</string>
-		<string>$(AppIdentifierPrefix)com.wiley.instructure.shared-credentials</string>
+		<string>$(AppIdentifierPrefix)com.wiley.icanvas.wel</string>
+		<string>$(AppIdentifierPrefix)com.wiley.icanvas.shared-credentials</string>
 	</array>
 </dict>
 </plist>
