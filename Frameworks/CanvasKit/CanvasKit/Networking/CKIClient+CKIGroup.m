@@ -98,7 +98,7 @@
 {
     NSString *path = [[[group.context.path stringByAppendingPathComponent:@"groups"] stringByAppendingPathComponent:group.id] stringByAppendingPathComponent:@"invite"];
     return [RACSignal createSignal:^RACDisposable *(id<RACSubscriber> subscriber) {
-        NSURLSessionDataTask *task = [self POST:path parameters:@{@"invitees": @[userEmail]} progress:nil success:^(NSURLSessionDataTask *task, id responseObject) {
+        NSURLSessionDataTask *task = [self POST:path parameters:@{@"invitees": @[userEmail]} headers:nil progress:nil success:^(NSURLSessionDataTask *task, id responseObject) {
             [subscriber sendNext:responseObject];
             [subscriber sendCompleted];
         } failure:^(NSURLSessionDataTask *task, NSError *error) {
@@ -116,7 +116,7 @@
 {
     NSString *path = [[[group.context.path stringByAppendingPathComponent:@"groups"] stringByAppendingPathComponent:group.id] stringByAppendingPathComponent:@"memberships"];
     return [RACSignal createSignal:^RACDisposable *(id<RACSubscriber> subscriber) {
-        NSURLSessionDataTask *task = [self POST:path parameters:@{@"user_id": userID} progress:nil success:^(NSURLSessionDataTask *task, id responseObject) {
+        NSURLSessionDataTask *task = [self POST:path parameters:@{@"user_id": userID} headers:nil progress:nil success:^(NSURLSessionDataTask *task, id responseObject) {
             [subscriber sendNext:responseObject];
             [subscriber sendCompleted];
         } failure:^(NSURLSessionDataTask *task, NSError *error) {
@@ -134,7 +134,7 @@
 {
     NSString *path = [[group.path stringByAppendingPathComponent:@"users"] stringByAppendingPathComponent:userID];
     return [RACSignal createSignal:^RACDisposable *(id<RACSubscriber> subscriber) {
-        NSURLSessionDataTask *task = [self DELETE:path parameters:nil success:^(NSURLSessionDataTask *task, id responseObject) {
+        NSURLSessionDataTask *task = [self DELETE:path parameters:nil headers:nil success:^(NSURLSessionDataTask *task, id responseObject) {
             [subscriber sendNext:responseObject];
             [subscriber sendCompleted];
         } failure:^(NSURLSessionDataTask *task, NSError *error) {

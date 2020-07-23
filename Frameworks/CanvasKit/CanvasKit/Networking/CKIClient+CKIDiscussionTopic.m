@@ -54,7 +54,7 @@
     return [RACSignal createSignal:^RACDisposable *(id<RACSubscriber> subscriber) {
         @strongify(self)
         if (self) {
-            NSURLSessionDataTask *task = [self PUT:path parameters:nil success:^(NSURLSessionDataTask *task, id responseObject) {
+            NSURLSessionDataTask *task = [self PUT:path parameters:nil headers:nil success:^(NSURLSessionDataTask *task, id responseObject) {
                 [subscriber sendCompleted];
             } failure:^(NSURLSessionDataTask *task, NSError *error) {
                 [subscriber sendError:error];

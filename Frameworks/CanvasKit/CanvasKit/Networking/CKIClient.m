@@ -55,7 +55,7 @@ static CKIClient * _currentClient;
 + (void)setCurrentClient:(CKIClient *)client
 {
     @synchronized(self) {
-        [_currentClient invalidateSessionCancelingTasks:YES];
+        [_currentClient invalidateSessionCancelingTasks:YES resetSession:YES];
         _currentClient = client;
     }
 }
@@ -350,7 +350,7 @@ static CKIClient * _currentClient;
             return [RACDisposable disposableWithBlock:^{}];
         }
         
-        NSURLSessionDataTask *task = [self POST:path parameters:parameters progress:nil success:^(NSURLSessionDataTask *task, id responseObject) {
+        NSURLSessionDataTask *task = [self POST:path parameters:parameters headers:nil progress:nil success:^(NSURLSessionDataTask *task, id responseObject) {
             
             NSString *jsonContentKey = [modelClass keyForJSONAPIContent];
             NSLog(@"created a model %@", responseObject);
@@ -379,7 +379,7 @@ static CKIClient * _currentClient;
             return [RACDisposable disposableWithBlock:^{}];
         }
         
-        NSURLSessionDataTask *task = [self PUT:model.path parameters:parameters success:^(NSURLSessionDataTask *task, id responseObject) {
+        NSURLSessionDataTask *task = [self PUT:model.path parameters:parameters headers:nil success:^(NSURLSessionDataTask *task, id responseObject) {
             Class modelClass = model.class;
             NSAssert([modelClass isSubclassOfClass:[CKIModel class]], @"Can only create CKIModels");
 

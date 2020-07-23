@@ -50,7 +50,7 @@ abstract_target 'defaults' do
 
   pod 'Marshal', '~> 1.2.7'
   pod 'Cartography', '~> 3.1'
-  pod 'AFNetworking', '~> 3.0'
+  pod 'AFNetworking', '~> 4.0'
   pod 'Mantle', '~> 1.5.5'
 
   target 'PactTests' do
