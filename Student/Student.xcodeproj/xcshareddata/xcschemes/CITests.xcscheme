@@ -29,7 +29,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "492704721CF4AF7100C631C6"
-               BuildableName = "Student.app"
+               BuildableName = "Wiley Exam Prep.app"
                BlueprintName = "Student"
                ReferencedContainer = "container:Student.xcodeproj">
             </BuildableReference>
@@ -89,7 +89,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "492704721CF4AF7100C631C6"
-            BuildableName = "Student.app"
+            BuildableName = "Wiley Exam Prep.app"
             BlueprintName = "Student"
             ReferencedContainer = "container:Student.xcodeproj">
          </BuildableReference>
@@ -133,14 +133,14 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "3B6DCCA41FB502CD005EE8D2"
-            BuildableName = "GradesWidget.appex"
+            BuildableName = "Wiley Exam Prep Grades.appex"
             BlueprintName = "GradesWidget"
             ReferencedContainer = "container:Student.xcodeproj">
          </BuildableReference>
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "492704721CF4AF7100C631C6"
-            BuildableName = "Student.app"
+            BuildableName = "Wiley Exam Prep.app"
             BlueprintName = "Student"
             ReferencedContainer = "container:Student.xcodeproj">
          </BuildableReference>
@@ -255,7 +255,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "492704721CF4AF7100C631C6"
-            BuildableName = "Student.app"
+            BuildableName = "Wiley Exam Prep.app"
             BlueprintName = "Student"
             ReferencedContainer = "container:Student.xcodeproj">
          </BuildableReference>
@@ -272,7 +272,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "492704721CF4AF7100C631C6"
-            BuildableName = "Student.app"
+            BuildableName = "Wiley Exam Prep.app"
             BlueprintName = "Student"
             ReferencedContainer = "container:Student.xcodeproj">
          </BuildableReference>

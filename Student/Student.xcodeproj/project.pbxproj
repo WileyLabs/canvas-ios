@@ -20,7 +20,7 @@
 		2CE205B820EBF690002A6A64 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2CE205B720EBF68F002A6A64 /* GoogleService-Info.plist */; };
 		3B5542482369F9F4007D3CE0 /* AssignmentListViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B5542472369F9F4007D3CE0 /* AssignmentListViewControllerTests.swift */; };
 		3B6DCCA71FB502CE005EE8D2 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B6DCCA61FB502CE005EE8D2 /* NotificationCenter.framework */; };
-		3B6DCCB11FB502CE005EE8D2 /* GradesWidget.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 3B6DCCA51FB502CD005EE8D2 /* GradesWidget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		3B6DCCB11FB502CE005EE8D2 /* Wiley Exam Prep Grades.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 3B6DCCA51FB502CD005EE8D2 /* Wiley Exam Prep Grades.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		3B8404502360F36B00D39060 /* AssignmentListViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B84044F2360F36B00D39060 /* AssignmentListViewController.storyboard */; };
 		492704771CF4AF7100C631C6 /* CanvasAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492704761CF4AF7100C631C6 /* CanvasAppDelegate.swift */; };
 		492706A11CF4B93F00C631C6 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492706A01CF4B93F00C631C6 /* RootViewController.swift */; };
@@ -337,7 +337,7 @@
 			dstSubfolderSpec = 13;
 			files = (
 				B1DC259E23DF81CF0005809D /* SubmitAssignment.appex in Embed App Extensions */,
-				3B6DCCB11FB502CE005EE8D2 /* GradesWidget.appex in Embed App Extensions */,
+				3B6DCCB11FB502CE005EE8D2 /* Wiley Exam Prep Grades.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -418,12 +418,12 @@
 		2F60CD48D1AD6AD81369BEFD /* Pods-defaults-PreSubmissionAnnotations.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-defaults-PreSubmissionAnnotations.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-defaults-PreSubmissionAnnotations/Pods-defaults-PreSubmissionAnnotations.debug.xcconfig"; sourceTree = "<group>"; };
 		3105EE2FF7DE0582A458F38F /* Pods-defaults-TechDebt.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-defaults-TechDebt.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-defaults-TechDebt/Pods-defaults-TechDebt.debug.xcconfig"; sourceTree = "<group>"; };
 		3B5542472369F9F4007D3CE0 /* AssignmentListViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssignmentListViewControllerTests.swift; sourceTree = "<group>"; };
-		3B6DCCA51FB502CD005EE8D2 /* GradesWidget.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = GradesWidget.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B6DCCA51FB502CD005EE8D2 /* Wiley Exam Prep Grades.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Wiley Exam Prep Grades.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B6DCCA61FB502CE005EE8D2 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
 		3B6DCCAE1FB502CE005EE8D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3B84044F2360F36B00D39060 /* AssignmentListViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AssignmentListViewController.storyboard; sourceTree = "<group>"; };
 		3B90C1FF1FBE282F00A32303 /* GradesWidget.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = GradesWidget.entitlements; sourceTree = "<group>"; };
-		492704731CF4AF7100C631C6 /* Student.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Student.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		492704731CF4AF7100C631C6 /* Wiley Exam Prep.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Wiley Exam Prep.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		492704761CF4AF7100C631C6 /* CanvasAppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CanvasAppDelegate.swift; sourceTree = "<group>"; };
 		492704821CF4AF7100C631C6 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		492706A01CF4B93F00C631C6 /* RootViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
@@ -1037,8 +1037,8 @@
 		492704741CF4AF7100C631C6 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				492704731CF4AF7100C631C6 /* Student.app */,
-				3B6DCCA51FB502CD005EE8D2 /* GradesWidget.appex */,
+				492704731CF4AF7100C631C6 /* Wiley Exam Prep.app */,
+				3B6DCCA51FB502CD005EE8D2 /* Wiley Exam Prep Grades.appex */,
 				B1BB7A8222BAC820006CA068 /* SubmitAssignment.appex */,
 				B1CA092E22C4237C008AA352 /* SubmitAssignmentTests.xctest */,
 				7DE1160722F8AAB1005BFE98 /* StudentUnitTests.xctest */,
@@ -2123,7 +2123,7 @@
 			);
 			name = GradesWidget;
 			productName = GradesWidget;
-			productReference = 3B6DCCA51FB502CD005EE8D2 /* GradesWidget.appex */;
+			productReference = 3B6DCCA51FB502CD005EE8D2 /* Wiley Exam Prep Grades.appex */;
 			productType = "com.apple.product-type.app-extension";
 		};
 		492704721CF4AF7100C631C6 /* Student */ = {
@@ -2149,7 +2149,7 @@
 			);
 			name = Student;
 			productName = Canvas;
-			productReference = 492704731CF4AF7100C631C6 /* Student.app */;
+			productReference = 492704731CF4AF7100C631C6 /* Wiley Exam Prep.app */;
 			productType = "com.apple.product-type.application";
 		};
 		7DC5716F22F8B16200F2E9BB /* StudentUITests */ = {
@@ -3169,6 +3169,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 8;
 				DEVELOPMENT_TEAM = 629653E2KU;
 				ENABLE_BITCODE = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -3178,8 +3179,9 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
+				MARKETING_VERSION = 6.4;
 				PRODUCT_BUNDLE_IDENTIFIER = com.wiley.icanvas.wel.GradesWidget;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Wiley Exam Prep Grades";
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_VERSION = 5.0;
@@ -3203,6 +3205,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 8;
 				DEVELOPMENT_TEAM = 629653E2KU;
 				ENABLE_BITCODE = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -3212,8 +3215,9 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
+				MARKETING_VERSION = 6.4;
 				PRODUCT_BUNDLE_IDENTIFIER = com.wiley.icanvas.wel.GradesWidget;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Wiley Exam Prep Grades";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
 			};
@@ -3338,7 +3342,7 @@
 				CODE_SIGN_ENTITLEMENTS = Student/Student.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 8;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = 629653E2KU;
 				ENABLE_BITCODE = NO;
@@ -3353,7 +3357,7 @@
 				);
 				MARKETING_VERSION = 6.4;
 				PRODUCT_BUNDLE_IDENTIFIER = com.wiley.icanvas.wel;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Wiley Exam Prep";
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
@@ -3370,7 +3374,7 @@
 				CODE_SIGN_ENTITLEMENTS = Student/Student.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 8;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = 629653E2KU;
 				ENABLE_BITCODE = NO;
@@ -3385,7 +3389,7 @@
 				);
 				MARKETING_VERSION = 6.4;
 				PRODUCT_BUNDLE_IDENTIFIER = com.wiley.icanvas.wel;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Wiley Exam Prep";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
@@ -3516,6 +3520,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 8;
 				DEVELOPMENT_TEAM = 629653E2KU;
 				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/../Carthage/Build/iOS";
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -3525,6 +3530,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
+				MARKETING_VERSION = 6.4;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.wiley.icanvas.wel.SubmitAssignment;
@@ -3547,6 +3553,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 8;
 				DEVELOPMENT_TEAM = 629653E2KU;
 				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/../Carthage/Build/iOS";
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -3556,6 +3563,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
+				MARKETING_VERSION = 6.4;
 				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.wiley.icanvas.wel.SubmitAssignment;
 				PRODUCT_NAME = "$(TARGET_NAME)";
